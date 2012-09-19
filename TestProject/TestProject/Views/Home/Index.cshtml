@@ -1,0 +1,17 @@
+﻿@model TestProject.Models.DetailsViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(x=>x.Name)
+    @Html.EditorFor(x => x.Name)
+    <br/>
+    @Html.LabelFor(x=>x.Category)
+    @Html.EditorFor(x => x.Category)
+    <br/>
+    <br/>
+    <input type="submit" value="Save" />
+}
